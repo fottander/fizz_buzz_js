@@ -11,5 +11,3 @@ before_script:
 
 notifications:
   email: false
-
-2=1+1
