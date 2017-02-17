@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My fizzbuzz</title>
+    <script src="src/fizz_buzz.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+  $(document).ready(function () {
+    $('#play').click(function () {
+      var i = ($('#input').val());
+      var calculator = new FizzCalculator();
+      var message = calculator.fizzbuzz_calc(i);
+      $('#display_message').html(message);
+    });
+  });
+</script>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="input" placeholder="Input">
+      <input type="button" id="play" value="Play">
+    </form>
+    <div>
+      <span id="display_message"></span>
+
+    </div>
+  </body>
+</html>
