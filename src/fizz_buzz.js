@@ -13,6 +13,6 @@ FizzCalculator.prototype.fizzbuzz_calc = function(x){
     return('fizz');
   }
   else {
-    return('Put in a positive integer');
+    return(x);
 }
 };
